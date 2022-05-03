@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'home-22.dart';
 import 'login.dart';
 import 'massenger_screen.dart';
+import 'massenger_list.dart';
+
 
 
 void main() {
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: massenger_screen(),
+      home: massenger_list(),
     );
   }
 }
