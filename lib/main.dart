@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/bmi_screen.dart';
 
 // import 'home_screan.dart';
 import 'home-22.dart';
@@ -7,7 +8,7 @@ import 'massenger_screen.dart';
 import 'massenger_list.dart';
 import 'user_model.dart';
 import 'counter_screen.dart';
-
+import 'bmi_screen.dart';
 
 
 
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CounterScreen(),
+      home: BmiScreen(),
     );
   }
 }
