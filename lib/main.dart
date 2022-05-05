@@ -5,6 +5,9 @@ import 'home-22.dart';
 import 'login.dart';
 import 'massenger_screen.dart';
 import 'massenger_list.dart';
+import 'user_model.dart';
+import 'counter_screen.dart';
+
 
 
 
@@ -38,7 +41,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: massenger_list(),
+      home: CounterScreen(),
     );
   }
 }
