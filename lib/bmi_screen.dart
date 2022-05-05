@@ -1,4 +1,8 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+
+import 'bmi_result_screen.dart';
 
 class BmiScreen extends StatefulWidget {
   // const BmiScreen({Key? key}) : super(key: key);
@@ -263,6 +267,7 @@ class _BmiScreenState extends State<BmiScreen> {
 
                                   });
                                 },
+                                heroTag: 'age-',
                                 mini: true,
                                 child: Icon(
                                   Icons.remove,
@@ -275,6 +280,7 @@ class _BmiScreenState extends State<BmiScreen> {
 
                                   });
                                 },
+                                heroTag: 'age+',
                                 mini: true,
                                 child: Icon(
                                   Icons.add,
@@ -324,6 +330,7 @@ class _BmiScreenState extends State<BmiScreen> {
 
                                   });
                                 },
+                                heroTag: 'weight-',
                                 mini: true,
                                 child: Icon(
                                   Icons.remove,
@@ -336,6 +343,7 @@ class _BmiScreenState extends State<BmiScreen> {
 
                                   });
                                 },
+                                heroTag: 'weight+',
                                 mini: true,
                                 child: Icon(
                                   Icons.add,
@@ -361,7 +369,21 @@ class _BmiScreenState extends State<BmiScreen> {
             width: double.infinity,
             color: Colors.blue,
             child: MaterialButton(
-              onPressed: () {},
+              onPressed: () {
+                double result = weight / pow(sliderValue / 100, 2);
+                print(result.round());
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BMIResultScreen(
+                      age: age,
+                      isMale: isMale,
+                      result: result.round(),
+                    ),
+                  ),
+                );
+              },
               height: 50.0,
               child: Text(
                 'CALCULATE',

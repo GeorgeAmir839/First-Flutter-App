@@ -9,6 +9,7 @@ import 'massenger_list.dart';
 import 'user_model.dart';
 import 'counter_screen.dart';
 import 'bmi_screen.dart';
+import 'bmi_result_screen.dart';
 
 
 
