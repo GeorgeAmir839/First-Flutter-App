@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import 'bmi_result_screen.dart';
+import '../bmi_result/bmi_result_screen.dart';
 
 class BmiScreen extends StatefulWidget {
   // const BmiScreen({Key? key}) : super(key: key);
@@ -35,7 +35,7 @@ class _BmiScreenState extends State<BmiScreen> {
             CircleAvatar(
               radius: 22,
               backgroundImage: NetworkImage(
-                  'https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/271583399_3289297231291342_1717388607240962408_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=dujANoOY-s4AX_jT_Kl&_nc_ht=scontent.fcai19-4.fna&oh=00_AT9QQLXrNqCKZGWm8QJlF-2oJCRH7rT9zXt0OjCrA4Ye-Q&oe=6275A60E'),
+                  'http://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
             ),
             Padding(
               padding: const EdgeInsets.all(10.0),

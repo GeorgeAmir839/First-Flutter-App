@@ -1,16 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-class UserData{
+import 'package:flutter_application_1/models/user/user_model.dart';
 
-  final int id;
-  final String name;
-  final String phone;
-  UserData({
-    required this.id,
-    required this.name,
-    required this.phone,
-  });
-}
 class user_model extends StatelessWidget {
   List<UserData> users = [
     UserData(id: 1, name: 'name', phone: 'phone'),

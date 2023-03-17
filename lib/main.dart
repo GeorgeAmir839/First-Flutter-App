@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/bmi_screen.dart';
+import 'package:flutter_application_1/layout/home_layout.dart';
+import 'package:flutter_application_1/modules/bmi/bmi_screen.dart';
 
 // import 'home_screan.dart';
-import 'home-22.dart';
-import 'login.dart';
-import 'massenger_screen.dart';
-import 'massenger_list.dart';
-import 'user_model.dart';
-import 'counter_screen.dart';
-import 'bmi_screen.dart';
-import 'bmi_result_screen.dart';
+import 'modules/home/home-22.dart';
+import 'modules/login/login.dart';
+import 'modules/login/login_2.dart';
+import 'modules/massenger/massenger_screen.dart';
+import 'modules/massenger/massenger_list.dart';
+import 'modules/users/user_model.dart';
+import 'modules/counter/counter_screen.dart';
+import 'modules/bmi/bmi_screen.dart';
+import 'modules/bmi_result/bmi_result_screen.dart';
 
 
 
@@ -43,7 +45,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BmiScreen(),
+      home: HomeLayout(),
     );
   }
 }
